@@ -21,3 +21,5 @@ const Route = use('Route')
 Route.on('/').render('Home')
 
 Route.get('/books','BookController.index')
+
+Route.get('/books/:id','BookController.details')

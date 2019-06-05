@@ -20,4 +20,4 @@ const Route = use('Route')
 
 Route.on('/').render('Home')
 
-Route.get('/posts','PostController.index')
+Route.get('/books','BookController.index')

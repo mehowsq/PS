@@ -12,9 +12,9 @@ class BookController {
     });
   }
   async details({ params, view }) {
-    const book = await Book.find(params.id)
-    return view.render('books.details',{
-      book: book
+    const book = await Book.find(params.id);
+    return view.render("books.details", {
+      daneKsiazki: book.toJSON()
     });
   }
 }

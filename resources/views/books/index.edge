@@ -1,6 +1,8 @@
 @layout('main')
 
 @section('content')
+<a href="/">Wróć</a>
+{{title}}
 <ul>
     @each(book in books)
     <li><a href="/books/{{book.id}}">{{book.title}}</a></li>

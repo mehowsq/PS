@@ -4,6 +4,10 @@
 const Model = use('Model')
 
 class Book extends Model {
+    
+    author(){
+        return this.belongsTo('App/Models/Author','id','id')
+    }
 }
 
 module.exports = Book

@@ -13,6 +13,9 @@ class BookController {
   }
   async details({ params, view }) {
     const book = await Book.find(params.id);
+    const author = await book.author().fetch();
+    console.log(book.toJSON());
+    console.log(author)
     return view.render("books.details", {
       daneKsiazki: book.toJSON()
     });

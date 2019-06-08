@@ -2,7 +2,7 @@
 
 @section('content')
 <a href="/">Wróć</a>
-{{title}}
+<h1>{{title}}</h1>
 <ul>
     @each(book in books)
     <li><a href="/books/{{book.id}}">{{book.title}}</a></li>

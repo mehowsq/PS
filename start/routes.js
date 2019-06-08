@@ -23,3 +23,10 @@ Route.on('/').render('Home')
 Route.get('/books','BookController.index')
 
 Route.get('/books/:id','BookController.details')
+
+Route.get('users:id','UserController.show').middleware('auth')
+
+Route.get('login','UserController.login')
+
+Route.get('register','RegisterController')
+
